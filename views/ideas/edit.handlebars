@@ -1,0 +1,10 @@
+<h1>edit</h1>
+
+<form action="/ideas/{{idea.id}}" method="POST">
+	<!-- <input type="hidden" name="_method" value="PUT"> -->
+	<label for="">Title</label>
+	<input type="text" name="title" value="{{idea.title}}"><br>
+	<label for="">details</label>
+	<textarea name="details" id="" cols="30" rows="10">{{idea.details}}</textarea><br>
+	<input type="submit" value="update">
+</form>

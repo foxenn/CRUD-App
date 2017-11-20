@@ -1,0 +1,19 @@
+<header>
+		<a href="/">Home</a>
+		<p><a href="/about">about</a></p>
+		<hr>
+		{{#if user}}
+
+			<p><a href="/ideas">view idea</a></p>
+			<p><a href="/ideas/add">add idea</a></p>
+			<p><a href="/users/logout">log outtt</a></p>
+			<hr>
+
+		{{else}}
+
+			<a href="/users/login">login</a>
+			<a href="/users/register">register</a>
+
+		{{/if}}
+		
+	</header>

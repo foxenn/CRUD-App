@@ -1,0 +1,17 @@
+<h1>All ideas here</h1>
+
+{{#each ideas}}
+
+	<div class="idea_box">
+		<h3>{{title}}</h3>
+		<p>{{details}}</p>
+		<!-- <p>{{user}}</p> -->
+		<a href="/ideas/edit/{{id}}">Edit</a>
+		<a href="/ideas/delete/{{id}}">delete</a>
+	</div>
+
+{{else}}
+
+	<p>no videoo idea</p>
+
+{{/each}}
